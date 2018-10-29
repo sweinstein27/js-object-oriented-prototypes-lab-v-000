@@ -7,17 +7,17 @@ function BoardMember(name, homeState, training){
   User.prototype.veto = function(){
     return 'No, I must disagree'
   }
-  this.approve = function(){
+  User.prototype.approve = function(){
     return 'You can do that!'
   }
-  this.doCharity = function(){
+  User.prototype.doCharity = function(){
     return "I like to help people."
   }
 
-  this.releasePressStatement = function(){
+  User.prototype.releasePressStatement = function(){
     return "You will see great things from Scuber."
   }
 
-  this.sayHi = function(){
+  User.prototype.sayHi = function(){
     return `Hi, my name is ${this.name}. I am from ${this.homeState}, and I was trained in ${this.training}.`
   }
